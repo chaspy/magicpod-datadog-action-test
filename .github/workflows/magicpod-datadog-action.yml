@@ -1,0 +1,18 @@
+name: Test magicpod-datadog-action
+
+on: [push]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run magicpod-datadog-action
+        uses: chaspy/magicpod-datadog-action@main
+        with:
+          message: 'Hello, world!'
+          dd_api_token: ${{ secrets.DD_API_TOKEN }}
+          magicpod_api_token: ${{ secrets.MAGICPOD_API_TOKEN }}
+
