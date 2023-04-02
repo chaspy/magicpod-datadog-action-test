@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run magicpod-datadog-action
-        uses: chaspy/magicpod-datadog-action@v0.1.0
+        uses: chaspy/magicpod-datadog-action@v0.2.0
         with:
           magicpod_api_token: ${{ secrets.MAGICPOD_API_TOKEN }}
           magicpod_organization_name: ${{ secrets.MAGICPOD_ORGANIZATION_NAME}}
