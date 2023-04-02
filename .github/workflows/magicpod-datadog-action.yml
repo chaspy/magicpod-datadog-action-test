@@ -12,7 +12,5 @@ jobs:
       - name: Run magicpod-datadog-action
         uses: chaspy/magicpod-datadog-action@main
         with:
-          message: 'Hello, world!'
-          dd_api_token: ${{ secrets.DD_API_TOKEN }}
-          magicpod_api_token: ${{ secrets.MAGICPOD_API_TOKEN }}
-
+          dd_api_key: ${{ secrets.DD_API_KEY }}
+          magicpod_api_key: ${{ secrets.MAGICPOD_API_KEY }}
