@@ -1,6 +1,8 @@
 name: Test magicpod-datadog-action
 
-on: [push]
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run 00:00 (UTC) Everyday
 
 jobs:
   run:
