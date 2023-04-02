@@ -12,5 +12,8 @@ jobs:
       - name: Run magicpod-datadog-action
         uses: chaspy/magicpod-datadog-action@main
         with:
-          dd_api_key: ${{ secrets.DD_API_KEY }}
           magicpod_api_key: ${{ secrets.MAGICPOD_API_KEY }}
+          magicpod_organization_name: ${{ secrets.MAGICPOD_ORGANIZATION_NAME}}
+          magicpod_project_name: ${{ secrets.MAGICPOD_PROJECT_NAME}}
+        env:
+          DD_API_KEY: ${{ secrets.DD_API_KEY }}
