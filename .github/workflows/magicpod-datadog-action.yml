@@ -1,8 +1,9 @@
 name: Test magicpod-datadog-action
 
 on:
-  schedule:
-    - cron: '0,20,40 * * * *' # Every 20 minutes
+  push:
+    branches:
+      - main
 
 jobs:
   run:
